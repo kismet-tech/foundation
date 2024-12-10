@@ -1,0 +1,18 @@
+# Compiled JavaScript files
+dist/
+out/
+build/
+
+# TypeScript cache files
+*.tsbuildinfo
+
+# Dependency directories
+node_modules/
+
+# IDE-specific files
+.idea/
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db

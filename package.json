@@ -1,0 +1,32 @@
+{
+  "name": "@kismet_ai/foundation",
+  "version": "1.0.10",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "author": "Julian Theoderik Trajanson",
+  "scripts": {
+    "bump": "yarn build && npm version patch --no-git-tag-version",
+    "build": "yarn rollup -c",
+    "pub": "npx npm publish --access public"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@types/node": "^22.10.1",
+    "esbuild-plugin-alias": "^0.2.1",
+    "esbuild-plugin-tsconfig-paths": "^1.0.1",
+    "madge": "^8.0.0",
+    "rollup": "^4.28.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "date-fns": "^4.1.0"
+  }
+}
