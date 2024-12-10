@@ -1,2 +1,2 @@
 export * from "./BifrostFormQuestions";
-export * from "./RenderableItineraryOffer";
+export * from "./ItineraryOffer";

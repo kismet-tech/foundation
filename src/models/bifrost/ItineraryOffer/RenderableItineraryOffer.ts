@@ -1,5 +1,4 @@
-import { CalendarDate } from "../core/date/CalendarDate";
-import { CalendarDateRange } from "../core/date/CalendarDateRange";
+import { CalendarDateRange, CalendarDate } from "@/models/core";
 
 export enum ItineraryOfferOriginatorType {
   KISMET_AI = "KISMET_AI",
@@ -24,11 +23,8 @@ export interface RenderableItineraryOfferCriterion {
 
 export interface RenderableItineraryHotelRoomOfferRunOfHouseDetails {}
 
-export interface RenderableItineraryHotelRoomOffer {
+export type RenderableItineraryHotelRoomOffer = {
   hotelRoomOfferId: string;
-
-  hotelRoomId?: string;
-  runOfHouseDetails?: RenderableItineraryHotelRoomOfferRunOfHouseDetails;
 
   countOffered: number;
   countAvailable: number;
@@ -42,7 +38,12 @@ export interface RenderableItineraryHotelRoomOffer {
 
   heroImageUrl: string;
   hotelRoomImageUrls: string[];
-}
+} & (
+  | { hotelRoomId: string }
+  | {
+      runOfHouseDetails: RenderableItineraryHotelRoomOfferRunOfHouseDetails;
+    }
+);
 
 export enum RenderableItineraryEventOfferApprovalStatus {
   PENDING = "Pending",
