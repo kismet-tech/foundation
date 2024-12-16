@@ -1,9 +1,9 @@
 import {
   BifrostFormQuestion,
   BifrostFormQuestionType,
-} from "src/models/bifrost/BifrostFormQuestions/BifrostFormQuestion";
+} from "../../models/bifrost/BifrostFormQuestions/BifrostFormQuestion/BifrostFormQuestion";
 import { BifrostFormQuestionResponseType } from "src/models/bifrost/BifrostFormQuestions/BifrostFormQuestionResponse";
-import { BifrostFormQuestionWithResponse } from "src/models/bifrost/BifrostFormQuestions/BifrostFormQuestionWithResponse";
+import { BifrostFormQuestionWithResponse } from "../../models/bifrost/BifrostFormQuestions/BifrostFormQuestionWithResponse/BifrostFormQuestionWithResponse";
 
 interface BundleBifrostFormQuestionWithResponseProps {
   bifrostFormQuestion: BifrostFormQuestion;
@@ -105,6 +105,31 @@ export const bundleBifrostFormQuestionWithResponse = ({
           left: "",
           right: "",
         },
+      },
+    };
+  } else if (
+    bifrostFormQuestion.type ===
+    BifrostFormQuestionType.MULTI_STAGE_SMART_DATE_SELECTOR
+  ) {
+    bifrostFormQuestionWithResponse = {
+      responseType: BifrostFormQuestionResponseType.MULTI_STAGE_SMART_DATE,
+      bifrostFormQuestion,
+      responseData: {
+        type: BifrostFormQuestionResponseType.MULTI_STAGE_SMART_DATE,
+        responseValue: {},
+      },
+    };
+  } else if (
+    bifrostFormQuestion.type ===
+    BifrostFormQuestionType.MULTI_STAGE_REASON_FOR_TRAVEL
+  ) {
+    bifrostFormQuestionWithResponse = {
+      responseType:
+        BifrostFormQuestionResponseType.MULTI_STAGE_REASON_FOR_TRAVEL,
+      bifrostFormQuestion,
+      responseData: {
+        type: BifrostFormQuestionResponseType.MULTI_STAGE_REASON_FOR_TRAVEL,
+        responseValue: {},
       },
     };
   } else {

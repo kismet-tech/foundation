@@ -2,23 +2,27 @@ import {
   BifrostFormQuestion,
   RenderableEmailInputBifrostFormQuestion,
   RenderableMultiSelectDateRangeBifrostFormQuestion,
+  RenderableMultiStageReasonForTravelBifrostFormQuestion,
+  RenderableMultiStageSmartDateSelectorBifrostFormQuestion,
   RenderablePhoneInputBifrostFormQuestion,
   RenderableSelectDateRangeBifrostFormQuestion,
   RenderableSplitTextInputBifrostFormQuestion,
   RenderableTextAreaBifrostFormQuestion,
   RenderableTextInputBifrostFormQuestion,
   RenderableToggleButtonGroupBifrostFormQuestion,
-} from "./BifrostFormQuestion";
+} from "../BifrostFormQuestion/BifrostFormQuestion";
 import {
   BifrostFormQuestionCalendarDateRangeResponse,
   BifrostFormQuestionEmailResponse,
   BifrostFormQuestionMultiCalendarDateRangeResponse,
+  BifrostFormQuestionMultiStageReasonForTravelResponse,
+  BifrostFormQuestionMultiStageSmartDateResponse,
   BifrostFormQuestionPhoneNumberResponse,
   BifrostFormQuestionResponse,
   BifrostFormQuestionResponseType,
   BifrostFormQuestionSplitTextResponse,
   BifrostFormQuestionTextResponse,
-} from "./BifrostFormQuestionResponse";
+} from "../BifrostFormQuestionResponse";
 
 export interface BaseBifrostFormQuestionWithResponse {
   responseType: BifrostFormQuestionResponseType;
@@ -76,10 +80,26 @@ export interface BifrostFormQuestionWithSplitTextResponse {
   responseData: BifrostFormQuestionSplitTextResponse;
 }
 
+// Multi-Stage
+
+export interface BifrostFormQuestionWithMultiStageSmartDateResponse {
+  responseType: BifrostFormQuestionResponseType.MULTI_STAGE_SMART_DATE;
+  bifrostFormQuestion: RenderableMultiStageSmartDateSelectorBifrostFormQuestion;
+  responseData: BifrostFormQuestionMultiStageSmartDateResponse;
+}
+
+export interface BifrostFormQuestionWithMultiStageReasonForTravelResponse {
+  responseType: BifrostFormQuestionResponseType.MULTI_STAGE_REASON_FOR_TRAVEL;
+  bifrostFormQuestion: RenderableMultiStageReasonForTravelBifrostFormQuestion;
+  responseData: BifrostFormQuestionMultiStageReasonForTravelResponse;
+}
+
 export type BifrostFormQuestionWithResponse =
   | BifrostFormQuestionWithTextResponse
   | BifrostFormQuestionWithPhoneNumberResponse
   | BifrostFormQuestionWithEmailResponse
   | BifrostFormQuestionWithCalendarDateRangeResponse
   | BifrostFormQuestionWithMultiCalendarDateRangeResponse
+  | BifrostFormQuestionWithMultiStageSmartDateResponse
+  | BifrostFormQuestionWithMultiStageReasonForTravelResponse
   | BifrostFormQuestionWithSplitTextResponse;

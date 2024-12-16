@@ -3,7 +3,7 @@ import { renderMMSlashDDSlashYYFormatCalendarDate } from "./renderedFormats/rend
 import { renderAbbreviatedMonthDayOptionalYearFormatCalendarDate } from "./renderedFormats/renderAbbreviatedMonthDayOptionalYearFormatCalendarDate";
 import { renderMonthDayYearFormatCalendarDate } from "./renderedFormats/renderMonthDayYearFormatCalendarDate";
 import { renderMonthFormatCalendarDate } from "./renderedFormats/renderMonthFormatCalendarDate";
-import { CalendarDate } from "src/models/core/date/CalendarDate";
+import { CalendarDate } from "../../../models/core/date/CalendarDate/CalendarDate";
 
 interface RenderCalendarDateProps {
   calendarDate: CalendarDate;

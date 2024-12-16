@@ -10,6 +10,10 @@ export enum BifrostFormQuestionType {
   SELECT_DATE_RANGE = "SELECT_DATE_RANGE",
   MULTI_SELECT_DATE_RANGE = "MULTI_SELECT_DATE_RANGE",
 
+  // Multi-Stage
+  MULTI_STAGE_SMART_DATE_SELECTOR = "MULTI_STAGE_SMART_DATE_SELECTOR",
+  MULTI_STAGE_REASON_FOR_TRAVEL = "MULTI_STAGE_REASON_FOR_TRAVEL",
+
   SPLIT_TEXT_INPUT = "SPLIT_TEXT_INPUT",
 }
 
@@ -96,6 +100,19 @@ export interface RenderableSplitTextInputBifrostFormQuestion
 }
 
 //////////////////////////////////////////////////
+// Multi-Stage Inputs
+//////////////////////////////////////////////////
+export interface RenderableMultiStageSmartDateSelectorBifrostFormQuestion
+  extends SingleRenderableBifrostFormQuestion {
+  type: BifrostFormQuestionType.MULTI_STAGE_SMART_DATE_SELECTOR;
+}
+
+export interface RenderableMultiStageReasonForTravelBifrostFormQuestion
+  extends SingleRenderableBifrostFormQuestion {
+  type: BifrostFormQuestionType.MULTI_STAGE_REASON_FOR_TRAVEL;
+}
+
+//////////////////////////////////////////////////
 // Union Types
 //////////////////////////////////////////////////
 
@@ -107,4 +124,6 @@ export type BifrostFormQuestion =
   | RenderableToggleButtonGroupBifrostFormQuestion
   | RenderableSelectDateRangeBifrostFormQuestion
   | RenderableMultiSelectDateRangeBifrostFormQuestion
-  | RenderableSplitTextInputBifrostFormQuestion;
+  | RenderableSplitTextInputBifrostFormQuestion
+  | RenderableMultiStageSmartDateSelectorBifrostFormQuestion
+  | RenderableMultiStageReasonForTravelBifrostFormQuestion;

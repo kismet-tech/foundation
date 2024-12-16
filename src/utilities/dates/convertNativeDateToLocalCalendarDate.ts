@@ -1,4 +1,4 @@
-import { CalendarDate } from "../../models/core/date/CalendarDate";
+import { CalendarDate } from "../../models/core/date/CalendarDate/CalendarDate";
 
 export const convertNativeDateToLocalCalendarDate = (
   date: Date

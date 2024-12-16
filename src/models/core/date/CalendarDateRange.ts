@@ -1,4 +1,4 @@
-import { CalendarDate } from "./CalendarDate";
+import { CalendarDate } from "./CalendarDate/CalendarDate";
 
 export interface CalendarDateRange {
   startCalendarDate: CalendarDate;

@@ -2,7 +2,7 @@ import {
   BifrostFormQuestionResponse,
   BifrostFormQuestionResponseType,
 } from "src/models/bifrost/BifrostFormQuestions/BifrostFormQuestionResponse";
-import { BifrostFormQuestionWithResponse } from "src/models/bifrost/BifrostFormQuestions/BifrostFormQuestionWithResponse";
+import { BifrostFormQuestionWithResponse } from "../../models/bifrost/BifrostFormQuestions/BifrostFormQuestionWithResponse/BifrostFormQuestionWithResponse";
 
 interface UpdateBifrostFormQuestionWithResponseProps {
   previousBifrostFormQuestionWithResponse: BifrostFormQuestionWithResponse;

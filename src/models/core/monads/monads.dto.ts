@@ -1,13 +1,13 @@
 import { EitherResponseType } from "./monadResponses";
 
-export interface ErrorResponseDataDto {
-  reason: string;
+export interface ErrorResponseDataDto<T> {
+  reason: T;
   errorMessage?: string;
   additionalErrorInformation?: string;
 }
-export interface ErrorResponseDto {
+export interface ErrorResponseDto<T> {
   type: EitherResponseType.ERROR;
-  error: ErrorResponseDataDto;
+  error: ErrorResponseDataDto<T>;
 
   statusCode?: number;
 }

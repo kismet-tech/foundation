@@ -1,2 +1,2 @@
-export * from "./CalendarDate";
+export * from "./CalendarDate/CalendarDate";
 export * from "./CalendarDateRange";

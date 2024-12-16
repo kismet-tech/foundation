@@ -1,4 +1,11 @@
-import { PendingCalendarDateRange } from "../../core/date/CalendarDateRange";
+import {
+  CalendarDateRange,
+  PendingCalendarDateRange,
+} from "../../../../models/core";
+import {
+  ReservedBifrostDateFlexibilityOptionValues,
+  ReservedBifrostReasonForTravelOptionValues,
+} from "../ReservedBifrostFormQuestionValues";
 
 export enum BifrostFormQuestionResponseType {
   TEXT = "TEXT",
@@ -6,6 +13,10 @@ export enum BifrostFormQuestionResponseType {
   EMAIL = "EMAIL",
   CALENDAR_DATE_RANGE = "CALENDAR_DATE_RANGE",
   MULTI_CALENDAR_DATE_RANGE = "MULTI_CALENDAR_DATE_RANGE",
+
+  // Multi-Stage
+  MULTI_STAGE_SMART_DATE = "MULTI_STAGE_SMART_DATE",
+  MULTI_STAGE_REASON_FOR_TRAVEL = "MULTI_STAGE_REASON_FOR_TRAVEL",
 
   SPLIT_TEXT = "SPLIT_TEXT",
 }
@@ -47,10 +58,39 @@ export interface BifrostFormQuestionSplitTextResponse {
   };
 }
 
+//////////////////////////////////////////////////
+// Multi-Stage
+//////////////////////////////////////////////////
+
+export interface BifrostFormQuestionMultiStageSmartDateResponseValue {
+  dateFlexibility?: ReservedBifrostDateFlexibilityOptionValues;
+  descriptionOfPotentialCalendarDates?: string;
+  suggestedCalendarDateRanges?: CalendarDateRange[];
+  calendarDateRanges?: PendingCalendarDateRange[];
+}
+
+export interface BifrostFormQuestionMultiStageSmartDateResponse {
+  type: BifrostFormQuestionResponseType.MULTI_STAGE_SMART_DATE;
+  responseValue: BifrostFormQuestionMultiStageSmartDateResponseValue;
+}
+
+export interface BifrostFormQuestionMultiStageReasonForTravelResponseValue {
+  reasonForTravel?: ReservedBifrostReasonForTravelOptionValues;
+  companyName?: string;
+  websiteUrl?: string;
+}
+
+export interface BifrostFormQuestionMultiStageReasonForTravelResponse {
+  type: BifrostFormQuestionResponseType.MULTI_STAGE_REASON_FOR_TRAVEL;
+  responseValue: BifrostFormQuestionMultiStageReasonForTravelResponseValue;
+}
+
 export type BifrostFormQuestionResponse =
   | BifrostFormQuestionTextResponse
   | BifrostFormQuestionPhoneNumberResponse
   | BifrostFormQuestionEmailResponse
   | BifrostFormQuestionCalendarDateRangeResponse
   | BifrostFormQuestionMultiCalendarDateRangeResponse
+  | BifrostFormQuestionMultiStageSmartDateResponse
+  | BifrostFormQuestionMultiStageReasonForTravelResponse
   | BifrostFormQuestionSplitTextResponse;

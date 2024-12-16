@@ -1,4 +1,4 @@
-import { CalendarDate } from "src/models/core/date/CalendarDate";
+import { CalendarDate } from "../../../../models/core/date/CalendarDate/CalendarDate";
 
 interface RenderMonthFormatCalendarDateProps {
   calendarDate: CalendarDate;

@@ -1,4 +1,5 @@
-import { CalendarDateRange, CalendarDate } from "@/models/core";
+import { CalendarDate } from "../../core/date/CalendarDate/CalendarDate";
+import { CalendarDateRange } from "../../../models/core/date/CalendarDateRange";
 
 export enum ItineraryOfferOriginatorType {
   KISMET_AI = "KISMET_AI",

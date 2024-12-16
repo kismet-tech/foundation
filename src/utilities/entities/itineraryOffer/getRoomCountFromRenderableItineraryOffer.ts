@@ -1,7 +1,7 @@
 import {
   RenderableItineraryHotelRoomOffer,
   RenderableItineraryOffer,
-} from "@/models";
+} from "../../../models";
 
 interface GetRoomCountFromRenderableItineraryOfferProps {
   renderableItineraryOffer: RenderableItineraryOffer;

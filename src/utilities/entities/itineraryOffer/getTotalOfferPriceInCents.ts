@@ -1,7 +1,7 @@
 import {
   RenderableItineraryHotelRoomOffer,
   RenderableItineraryOffer,
-} from "@/models";
+} from "../../../models";
 import { getDaysBetweenCalendarDates } from "../../dates/getDaysBetweenCalendarDates";
 
 interface GetTotalOfferPriceInCentsFromRenderableItineraryOfferProps {
