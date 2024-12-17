@@ -1,6 +1,10 @@
 {
   "name": "@kismet_ai/foundation",
+<<<<<<< HEAD
   "version": "1.0.62",
+=======
+  "version": "1.0.66",
+>>>>>>> f2ca1c5679b3e8afb798cb4b1996d85fe2ca5874
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
