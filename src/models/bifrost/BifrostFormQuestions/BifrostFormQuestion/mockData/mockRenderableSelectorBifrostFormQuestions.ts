@@ -9,18 +9,28 @@ export const mockRenderableSelectorBifrostFormQuestionAskingLocationOptionOne: R
   {
     value: "Chicago",
     label: "Chicago",
+    optionCategory: "Midwest",
   };
 
 export const mockRenderableSelectorBifrostFormQuestionAskingLocationOptionTwo: RenderableSelectorBifrostFormQuestionOption =
   {
     value: "Miami",
     label: "Miami",
+    optionCategory: "South East",
   };
 
 export const mockRenderableSelectorBifrostFormQuestionAskingLocationOptionThree: RenderableSelectorBifrostFormQuestionOption =
   {
     value: "Detroit",
     label: "Detroit",
+    optionCategory: "Midwest",
+  };
+
+export const mockRenderableSelectorBifrostFormQuestionAskingLocationOptionFour: RenderableSelectorBifrostFormQuestionOption =
+  {
+    value: "Atlanta",
+    label: "Atlanta",
+    optionCategory: "South East",
   };
 
 export const mockRenderableSelectorBifrostFormQuestionAskingLocation: RenderableSelectorBifrostFormQuestion =
@@ -33,5 +43,6 @@ export const mockRenderableSelectorBifrostFormQuestionAskingLocation: Renderable
       mockRenderableSelectorBifrostFormQuestionAskingLocationOptionOne,
       mockRenderableSelectorBifrostFormQuestionAskingLocationOptionTwo,
       mockRenderableSelectorBifrostFormQuestionAskingLocationOptionThree,
+      mockRenderableSelectorBifrostFormQuestionAskingLocationOptionFour,
     ],
   };
