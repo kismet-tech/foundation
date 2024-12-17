@@ -65,6 +65,7 @@ export interface RenderableTextAreaBifrostFormQuestion
 export interface RenderableSelectorBifrostFormQuestionOption {
   label: string;
   value: string;
+  optionCategory?: string;
 }
 
 export interface RenderableSelectorBifrostFormQuestion
