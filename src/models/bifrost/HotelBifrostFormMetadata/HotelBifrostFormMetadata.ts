@@ -4,4 +4,5 @@ export interface HotelBifrostFormMetadata {
   hotelId: string;
   additionalBifrostFormQuestionsWithResponses: BifrostFormQuestionWithResponse[];
   assignedSalesAgentName: string;
+  includeExtendedStay: boolean;
 }
