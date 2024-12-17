@@ -6,6 +6,7 @@ import {
   RenderableMultiStageSmartDateSelectorBifrostFormQuestion,
   RenderablePhoneInputBifrostFormQuestion,
   RenderableSelectDateRangeBifrostFormQuestion,
+  RenderableSelectorBifrostFormQuestion,
   RenderableSplitTextInputBifrostFormQuestion,
   RenderableTextAreaBifrostFormQuestion,
   RenderableTextInputBifrostFormQuestion,
@@ -40,6 +41,13 @@ export interface BifrostTextAreaFormQuestionWithTextResponse {
   bifrostFormQuestion: RenderableTextAreaBifrostFormQuestion;
   responseData: BifrostFormQuestionTextResponse;
 }
+
+export interface BifrostSelectorFormQuestionWithTextResponse {
+  responseType: BifrostFormQuestionResponseType.TEXT;
+  bifrostFormQuestion: RenderableSelectorBifrostFormQuestion;
+  responseData: BifrostFormQuestionTextResponse;
+}
+
 export interface BifrostToggleButtonGroupFormQuestionWithTextResponse {
   responseType: BifrostFormQuestionResponseType.TEXT;
   bifrostFormQuestion: RenderableToggleButtonGroupBifrostFormQuestion;
@@ -48,6 +56,7 @@ export interface BifrostToggleButtonGroupFormQuestionWithTextResponse {
 export type BifrostFormQuestionWithTextResponse =
   | BifrostTextInputFormQuestionWithTextResponse
   | BifrostTextAreaFormQuestionWithTextResponse
+  | BifrostSelectorFormQuestionWithTextResponse
   | BifrostToggleButtonGroupFormQuestionWithTextResponse;
 
 export interface BifrostFormQuestionWithPhoneNumberResponse {
