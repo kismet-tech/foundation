@@ -9,6 +9,8 @@ interface RenderBifrostFormQuestionWithResponsesProps {
   bifrostFormQuestionsWithResponses: BifrostFormQuestionWithResponse[];
 }
 
+const NEW_LINE = "<br />";
+
 export const renderBifrostFormQuestionWithResponses = ({
   bifrostFormQuestionsWithResponses,
 }: RenderBifrostFormQuestionWithResponsesProps): string => {
@@ -89,11 +91,11 @@ export const renderBifrostFormQuestionWithResponses = ({
           bifrostFormQuestionWithResponse.responseData.responseValue
             .descriptionOfPotentialCalendarDates
         ) {
-          formattedResponse += `\n\nDescription of Date Flexibility? ${bifrostFormQuestionWithResponse.responseData.responseValue.descriptionOfPotentialCalendarDates}`;
+          formattedResponse += `${NEW_LINE}Description of Date Flexibility? ${bifrostFormQuestionWithResponse.responseData.responseValue.descriptionOfPotentialCalendarDates}`;
         }
 
         formattedResponse +=
-          "\n\n" +
+          `${NEW_LINE}Calendar Dates:` +
           bifrostFormQuestionWithResponse.responseData.responseValue
             .calendarDateRanges!.map((calendarDateRange) => {
               return renderCalendarDateRange({
@@ -136,10 +138,10 @@ export const renderBifrostFormQuestionWithResponses = ({
       ) {
         let formattedResponse = ``;
         formattedResponse += `${bifrostFormQuestionWithResponse.bifrostFormQuestion.left.bifrostFormQuestionId}: ${bifrostFormQuestionWithResponse.responseData.responseValue.left}`;
+        formattedResponse += `${NEW_LINE}`;
         formattedResponse += `${bifrostFormQuestionWithResponse.bifrostFormQuestion.right.bifrostFormQuestionId}: ${bifrostFormQuestionWithResponse.responseData.responseValue.right}`;
         return formattedResponse;
       }
     })
-    .join("\n");
-  return "2";
+    .join(`${NEW_LINE}`);
 };
