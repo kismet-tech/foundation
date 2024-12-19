@@ -5,6 +5,8 @@ export enum BifrostFormQuestionType {
 
   TEXT_AREA = "TEXT_AREA",
 
+  SELECTOR = "SELECTOR",
+
   TOGGLE_BUTTON_GROUP = "TOGGLE_BUTTON_GROUP",
 
   SELECT_DATE_RANGE = "SELECT_DATE_RANGE",
@@ -54,6 +56,23 @@ export interface RenderablePhoneInputBifrostFormQuestion
 export interface RenderableTextAreaBifrostFormQuestion
   extends SingleRenderableBifrostFormQuestion {
   type: BifrostFormQuestionType.TEXT_AREA;
+}
+
+//////////////////////////////////////////////////
+// Other
+//////////////////////////////////////////////////
+
+export interface RenderableSelectorBifrostFormQuestionOption {
+  label: string;
+  value: string;
+  optionCategory?: string;
+}
+
+export interface RenderableSelectorBifrostFormQuestion
+  extends SingleRenderableBifrostFormQuestion {
+  type: BifrostFormQuestionType.SELECTOR;
+
+  options: RenderableSelectorBifrostFormQuestionOption[];
 }
 
 //////////////////////////////////////////////////

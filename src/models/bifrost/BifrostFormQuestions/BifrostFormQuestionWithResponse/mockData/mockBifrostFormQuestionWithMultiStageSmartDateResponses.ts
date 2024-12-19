@@ -1,4 +1,4 @@
-import { mockRenderableMultiStageSmartDateSelectorBifrostFormQuestion } from "../../BifrostFormQuestion/mockData";
+import { mockRenderableMultiStageSmartDateSelectorBifrostFormQuestion } from "../../BifrostFormQuestion/mockData/mockRenderableMultiStageSmartDateSelectorBifrostFormQuestions";
 import {
   BifrostFormQuestionResponseType,
   mockBifrostFormQuestionMultiStageSmartDateResponseEmpty,

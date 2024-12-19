@@ -7,6 +7,8 @@ export enum ReservedBifrostFormQuestionIds {
   REASON_FOR_TRAVEL = "Reason for Travel",
   ARE_ITINERARY_DATES_FLEXIBLE = "Are Itinerary Dates Flexible",
 
+  STAY_LOCATION = "Stay Location",
+
   // Dates
   DATES = "Dates",
   POTENTIAL_DATES = "Potential Dates",
