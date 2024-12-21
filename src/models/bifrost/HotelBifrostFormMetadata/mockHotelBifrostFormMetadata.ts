@@ -7,6 +7,7 @@ export const mockHotelBifrostFormHotelMetadata: HotelBifrostFormHotelMetadata =
   {
     hotelId: "mews-grand-hotel",
     assignedSalesAgentName: "Jason",
+
     hotelName: "Mews Grand Hotel",
   };
 
