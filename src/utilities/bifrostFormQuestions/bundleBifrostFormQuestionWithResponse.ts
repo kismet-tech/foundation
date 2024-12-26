@@ -2,7 +2,7 @@ import {
   BifrostFormQuestion,
   BifrostFormQuestionType,
 } from "../../models/bifrost/BifrostFormQuestions/BifrostFormQuestion/BifrostFormQuestion";
-import { BifrostFormQuestionResponseType } from "src/models/bifrost/BifrostFormQuestions/BifrostFormQuestionResponse";
+import { BifrostFormQuestionResponseType } from "../../models/bifrost/BifrostFormQuestions/BifrostFormQuestionResponse";
 import { BifrostFormQuestionWithResponse } from "../../models/bifrost/BifrostFormQuestions/BifrostFormQuestionWithResponse/BifrostFormQuestionWithResponse";
 
 interface BundleBifrostFormQuestionWithResponseProps {

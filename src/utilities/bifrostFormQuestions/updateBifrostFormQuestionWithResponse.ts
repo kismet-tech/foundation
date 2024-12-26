@@ -1,7 +1,7 @@
 import {
   BifrostFormQuestionResponse,
   BifrostFormQuestionResponseType,
-} from "src/models/bifrost/BifrostFormQuestions/BifrostFormQuestionResponse";
+} from "../../models/bifrost/BifrostFormQuestions/BifrostFormQuestionResponse";
 import { BifrostFormQuestionWithResponse } from "../../models/bifrost/BifrostFormQuestions/BifrostFormQuestionWithResponse/BifrostFormQuestionWithResponse";
 
 interface UpdateBifrostFormQuestionWithResponseProps {
