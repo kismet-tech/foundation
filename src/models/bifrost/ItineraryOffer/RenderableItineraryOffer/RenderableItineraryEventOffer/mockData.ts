@@ -1,8 +1,8 @@
 import {
-  RenderableItineraryEventOffer,
   HotelEventOfferStatus,
+  RenderableItineraryEventOffer,
   VenueOfferPricingType,
-} from "./RenderableItineraryOffer/RenderableItineraryOffer";
+} from "./RenderableItineraryEventOffer";
 
 export const mockRenderableItineraryEventOfferOne: RenderableItineraryEventOffer =
   {

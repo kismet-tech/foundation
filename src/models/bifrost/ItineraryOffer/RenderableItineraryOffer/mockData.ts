@@ -1,4 +1,4 @@
-import { mockRenderableItineraryEventOfferOne } from "../mockData";
+import { mockRenderableItineraryEventOfferOne } from "./RenderableItineraryEventOffer/mockData";
 import {
   mockRenderableItineraryHotelRoomOfferEight,
   mockRenderableItineraryHotelRoomOfferFive,
