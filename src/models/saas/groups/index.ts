@@ -1,1 +1,2 @@
-export * from "./BifrostGroupBookingCheckoutSessionSummary/BifrostGroupBookingCheckoutSessionSummary";
+export * from "./BifrostGroupBookingCheckoutCart";
+export * from "./BifrostGroupBookingCheckoutSessionSummary";

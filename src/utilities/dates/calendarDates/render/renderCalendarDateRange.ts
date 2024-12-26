@@ -1,7 +1,7 @@
 import { RenderedCalendarDateFormat } from "./RenderedCalendarDateFormat";
 import { renderCalendarDate } from "./renderCalendarDate";
 import { RenderedCalendarDateRangeJoinFormat } from "./RenderedCalendarDateRangeJoinFormat";
-import { CalendarDateRange } from "../../../models/core/date/CalendarDateRange";
+import { CalendarDateRange } from "../../../../models/core/date/CalendarDateRange";
 
 export interface RenderedCalendarDateCollapseStrategy {
   collapseSameDay: boolean;

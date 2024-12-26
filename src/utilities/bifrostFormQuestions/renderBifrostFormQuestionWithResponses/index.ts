@@ -1,9 +1,11 @@
+import {
+  renderCalendarDateRange,
+  RenderedCalendarDateFormat,
+  RenderedCalendarDateRangeJoinFormat,
+} from "./../../../utilities/dates";
 import { CalendarDateRange } from "../../../models";
 import { BifrostFormQuestionResponseType } from "../../../models/bifrost/BifrostFormQuestions/BifrostFormQuestionResponse/BifrostFormQuestionResponse";
 import { BifrostFormQuestionWithResponse } from "../../../models/bifrost/BifrostFormQuestions/BifrostFormQuestionWithResponse/BifrostFormQuestionWithResponse";
-import { renderCalendarDateRange } from "../../../utilities/dates/render/renderCalendarDateRange";
-import { RenderedCalendarDateFormat } from "../../../utilities/dates/render/RenderedCalendarDateFormat";
-import { RenderedCalendarDateRangeJoinFormat } from "../../../utilities/dates/render/RenderedCalendarDateRangeJoinFormat";
 
 interface RenderBifrostFormQuestionWithResponsesProps {
   bifrostFormQuestionsWithResponses: BifrostFormQuestionWithResponse[];

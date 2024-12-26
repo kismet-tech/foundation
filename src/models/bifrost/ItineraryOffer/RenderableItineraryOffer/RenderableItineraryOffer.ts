@@ -1,4 +1,5 @@
-import { CalendarDate } from "../../core/date/CalendarDate/CalendarDate";
+import { CalendarDate } from "../../../core/date/CalendarDate/CalendarDate";
+import { RenderableItineraryHotelRoomOffer } from "./RenderableItineraryHotelRoomOffer/RenderableItineraryHotelRoomOffer";
 
 export enum ItineraryOfferOriginatorType {
   KISMET_AI = "KISMET_AI",
@@ -7,8 +8,8 @@ export enum ItineraryOfferOriginatorType {
 }
 
 export enum VenueOfferPricingType {
-  ALT_FOOD_BEV_MIN = 'ALT_FOOD_BEV_MIN',
-  FIXED_COST = 'FIXED_COST',
+  ALT_FOOD_BEV_MIN = "ALT_FOOD_BEV_MIN",
+  FIXED_COST = "FIXED_COST",
 }
 
 export interface RenderableEventVenueOfferPricingInfo {
@@ -37,30 +38,6 @@ export interface RenderableItineraryOfferCriterion {
   doesMatchCriterion: boolean;
 }
 
-export interface RenderableItineraryHotelRoomOfferRunOfHouseDetails { }
-
-export type RenderableItineraryHotelRoomOffer = {
-  hotelRoomOfferId: string;
-
-  countOffered: number;
-  countAvailable: number;
-
-  offerPriceInCents: number;
-  listPriceInCents: number;
-
-  hotelRoomName: string;
-  hotelRoomDescription: string;
-  verboseHotelRoomDescription: string;
-
-  heroImageUrl: string;
-  hotelRoomImageUrls: string[];
-} & (
-    | { hotelRoomId: string }
-    | {
-      runOfHouseDetails: RenderableItineraryHotelRoomOfferRunOfHouseDetails;
-    }
-  );
-
 export interface RenderableItineraryEventOffer {
   eventOfferId: string;
   eventOfferName: string;
@@ -76,12 +53,12 @@ export interface RenderableItineraryEventOffer {
 }
 
 export enum HotelEventOfferStatus {
-  PROSPECT = 'PROSPECT',
-  TENTATIVE = 'TENTATIVE',
-  DEFINITIVE = 'DEFINITIVE',
-  CLOSED = 'CLOSED',
-  LOST = 'LOST',
-  WAITLISTED = 'WAITLISTED'
+  PROSPECT = "PROSPECT",
+  TENTATIVE = "TENTATIVE",
+  DEFINITIVE = "DEFINITIVE",
+  CLOSED = "CLOSED",
+  LOST = "LOST",
+  WAITLISTED = "WAITLISTED",
 }
 
 export interface RenderableItineraryOffer {

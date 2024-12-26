@@ -1,8 +1,8 @@
+import { getDaysBetweenCalendarDates } from "./../../../utilities/dates";
 import {
   RenderableItineraryHotelRoomOffer,
   RenderableItineraryOffer,
 } from "../../../models";
-import { getDaysBetweenCalendarDates } from "../../dates/getDaysBetweenCalendarDates";
 
 interface GetTotalOfferPriceInCentsFromRenderableItineraryOfferProps {
   renderableItineraryOffer: RenderableItineraryOffer;
