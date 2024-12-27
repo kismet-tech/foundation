@@ -6,12 +6,14 @@ import {
 
 // CASE 1: THE EVENT WAS CREATED IN KISMET NATIVELY
 // DENOTED BY isEventOfferPriceEnabled set to false
-// PRICE calculation should be done based on the price information provided for venues
+// eventOfferListPriceInCents is price without any discount
+// eventOfferListPriceInCents is price with the discount applied
 export const mockRenderableItineraryEventOfferOne: RenderableItineraryEventOffer =
 {
   eventOfferId: "1232341",
   eventOfferName: "Welcome Reception",
-  eventOfferPriceInCents: 15000,
+  eventOfferPriceInCents: 11000,
+  eventOfferListPriceInCents: 15000,
   isEventOfferPriceEnabled: false,
   imageUrl:
     "https://nypost.com/wp-content/uploads/sites/2/2022/04/melodys-piano-bar-1.jpg?quality=75&strip=all",
@@ -25,7 +27,8 @@ export const mockRenderableItineraryEventOfferOne: RenderableItineraryEventOffer
       venueName: "The Ballroom",
       pricingInfo: {
         pricingType: VenueOfferPricingType.FIXED_COST,
-        priceInCents: 5000,
+        offerPriceInCents: 6000,
+        offerListPriceInCents: 7000,
       },
     },
     {
@@ -33,7 +36,8 @@ export const mockRenderableItineraryEventOfferOne: RenderableItineraryEventOffer
       venueName: "Melody's Piano Bar",
       pricingInfo: {
         pricingType: VenueOfferPricingType.ALT_FOOD_BEV_MIN,
-        priceInCents: 6000,
+        offerPriceInCents: 5000,
+        offerListPriceInCents: 8000,
       },
     },
   ],
@@ -45,11 +49,14 @@ export const mockRenderableItineraryEventOfferOne: RenderableItineraryEventOffer
 
 // CASE 2: THE EVENT WAS SOURCED VIA TRIPLESEAT
 // DENOTED BY isEventOfferPriceEnabled set to true
-// PRICE is directly set via eventOfferPriceInCents
+// PRICE info is only available at the event level
+// eventOfferPriceInCents is equal to eventOfferListPriceInCents
+// No pricing info available at per venue level
 export const mockRenderableItineraryEventOfferTwo: RenderableItineraryEventOffer = {
   eventOfferId: "1232342",
   eventOfferName: "Theatre Show: The Lion King",
-  eventOfferPriceInCents: 250000,
+  eventOfferPriceInCents: 140000,
+  eventOfferListPriceInCents: 140000,
   isEventOfferPriceEnabled: true,
   imageUrl:
     "https://media.timeout.com/images/105795964/image.jpg",
@@ -61,18 +68,12 @@ export const mockRenderableItineraryEventOfferTwo: RenderableItineraryEventOffer
     {
       venueOfferId: "venue-offer-1",
       venueName: "The Theatre",
-      pricingInfo: {
-        pricingType: VenueOfferPricingType.FIXED_COST,
-        priceInCents: 50000,
-      },
+      pricingInfo: null,
     },
     {
       venueOfferId: "venue-offer-2",
       venueName: "The Room",
-      pricingInfo: {
-        pricingType: VenueOfferPricingType.ALT_FOOD_BEV_MIN,
-        priceInCents: 90000,
-      },
+      pricingInfo: null,
     },
   ],
   details: {
@@ -86,6 +87,7 @@ export const mockRenderableItineraryEventOfferThree: RenderableItineraryEventOff
   eventOfferId: "1232343",
   eventOfferName: "Sam & Jennifer Wedding",
   eventOfferPriceInCents: 960000,
+  eventOfferListPriceInCents: 1000000,
   isEventOfferPriceEnabled: false,
   imageUrl: "",
   startDateTime: "2024-12-16T16:00:00Z",
@@ -98,7 +100,8 @@ export const mockRenderableItineraryEventOfferThree: RenderableItineraryEventOff
       venueName: "Grand Cathedral",
       pricingInfo: {
         pricingType: VenueOfferPricingType.FIXED_COST,
-        priceInCents: 300000,
+        offerPriceInCents: 300000,
+        offerListPriceInCents: 320000
       },
     },
     {
@@ -106,7 +109,8 @@ export const mockRenderableItineraryEventOfferThree: RenderableItineraryEventOff
       venueName: "Crystal Ballroom",
       pricingInfo: {
         pricingType: VenueOfferPricingType.FIXED_COST,
-        priceInCents: 15000,
+        offerPriceInCents: 300000,
+        offerListPriceInCents: 320000
       },
     },
     {
@@ -114,7 +118,8 @@ export const mockRenderableItineraryEventOfferThree: RenderableItineraryEventOff
       venueName: "Rooftop Lounge",
       pricingInfo: {
         pricingType: VenueOfferPricingType.ALT_FOOD_BEV_MIN,
-        priceInCents: 250000,
+        offerPriceInCents: 360000,
+        offerListPriceInCents: 360000
       },
     }
   ],
