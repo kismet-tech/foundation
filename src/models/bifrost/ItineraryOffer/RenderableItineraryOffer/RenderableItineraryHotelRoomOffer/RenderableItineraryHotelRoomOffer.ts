@@ -1,3 +1,5 @@
+import { CalendarDate, CalendarDateRange } from "src/models/core";
+
 export interface RenderableItineraryHotelRoomOfferRunOfHouseDetails {}
 
 export type RenderableItineraryHotelRoomOffer = {
@@ -12,6 +14,8 @@ export type RenderableItineraryHotelRoomOffer = {
   hotelRoomName: string;
   hotelRoomDescription: string;
   verboseHotelRoomDescription: string;
+
+  calendarDateRange: CalendarDateRange;
 
   heroImageUrl: string;
   hotelRoomImageUrls: string[];

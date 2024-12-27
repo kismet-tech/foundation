@@ -15,6 +15,18 @@ export const mockRunOfHouseRenderableItineraryHotelRoomOffer: RenderableItinerar
     hotelRoomImageUrls: [
       `https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg`,
     ],
+    calendarDateRange: {
+      startCalendarDate: {
+        year: 2025,
+        month: 3,
+        day: 10,
+      },
+      endCalendarDate: {
+        year: 2025,
+        month: 3,
+        day: 15,
+      },
+    },
   };
 
 export const mockRenderableItineraryHotelRoomOfferOne: RenderableItineraryHotelRoomOffer =
@@ -36,6 +48,18 @@ export const mockRenderableItineraryHotelRoomOfferOne: RenderableItineraryHotelR
       `https://images.unsplash.com/photo-1507679799987-c73779587ccf`,
       `https://imagery.hoteltonight.com/mobile_web/homepage/homepage-2-v3.jpg?&fit=crop&dpr=1&fm=pjpg&q=25&w=412&h=400&auto=compress`,
     ],
+    calendarDateRange: {
+      startCalendarDate: {
+        year: 2025,
+        month: 3,
+        day: 10,
+      },
+      endCalendarDate: {
+        year: 2025,
+        month: 3,
+        day: 15,
+      },
+    },
   };
 
 export const mockRenderableItineraryHotelRoomOfferTwo: RenderableItineraryHotelRoomOffer =
@@ -53,6 +77,18 @@ export const mockRenderableItineraryHotelRoomOfferTwo: RenderableItineraryHotelR
     hotelRoomImageUrls: [
       `https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg`,
     ],
+    calendarDateRange: {
+      startCalendarDate: {
+        year: 2025,
+        month: 3,
+        day: 10,
+      },
+      endCalendarDate: {
+        year: 2025,
+        month: 3,
+        day: 15,
+      },
+    },
   };
 
 export const mockRenderableItineraryHotelRoomOfferThree: RenderableItineraryHotelRoomOffer =
@@ -70,6 +106,18 @@ export const mockRenderableItineraryHotelRoomOfferThree: RenderableItineraryHote
     hotelRoomImageUrls: [
       `https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg`,
     ],
+    calendarDateRange: {
+      startCalendarDate: {
+        year: 2025,
+        month: 3,
+        day: 15,
+      },
+      endCalendarDate: {
+        year: 2025,
+        month: 3,
+        day: 18,
+      },
+    },
   };
 
 export const mockRenderableItineraryHotelRoomOfferFour: RenderableItineraryHotelRoomOffer =
@@ -87,6 +135,18 @@ export const mockRenderableItineraryHotelRoomOfferFour: RenderableItineraryHotel
     hotelRoomImageUrls: [
       `https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg`,
     ],
+    calendarDateRange: {
+      startCalendarDate: {
+        year: 2025,
+        month: 3,
+        day: 11,
+      },
+      endCalendarDate: {
+        year: 2025,
+        month: 3,
+        day: 13,
+      },
+    },
   };
 
 export const mockRenderableItineraryHotelRoomOfferFive: RenderableItineraryHotelRoomOffer =
@@ -104,6 +164,18 @@ export const mockRenderableItineraryHotelRoomOfferFive: RenderableItineraryHotel
     hotelRoomImageUrls: [
       `https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg`,
     ],
+    calendarDateRange: {
+      startCalendarDate: {
+        year: 2025,
+        month: 3,
+        day: 10,
+      },
+      endCalendarDate: {
+        year: 2025,
+        month: 3,
+        day: 15,
+      },
+    },
   };
 
 export const mockRenderableItineraryHotelRoomOfferSix: RenderableItineraryHotelRoomOffer =
@@ -121,6 +193,18 @@ export const mockRenderableItineraryHotelRoomOfferSix: RenderableItineraryHotelR
     hotelRoomImageUrls: [
       `https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg`,
     ],
+    calendarDateRange: {
+      startCalendarDate: {
+        year: 2025,
+        month: 3,
+        day: 12,
+      },
+      endCalendarDate: {
+        year: 2025,
+        month: 3,
+        day: 15,
+      },
+    },
   };
 
 export const mockRenderableItineraryHotelRoomOfferSeven: RenderableItineraryHotelRoomOffer =
@@ -138,6 +222,18 @@ export const mockRenderableItineraryHotelRoomOfferSeven: RenderableItineraryHote
     hotelRoomImageUrls: [
       `https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg`,
     ],
+    calendarDateRange: {
+      startCalendarDate: {
+        year: 2025,
+        month: 3,
+        day: 13,
+      },
+      endCalendarDate: {
+        year: 2025,
+        month: 3,
+        day: 16,
+      },
+    },
   };
 
 export const mockRenderableItineraryHotelRoomOfferEight: RenderableItineraryHotelRoomOffer =
@@ -155,4 +251,16 @@ export const mockRenderableItineraryHotelRoomOfferEight: RenderableItineraryHote
     hotelRoomImageUrls: [
       `https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg`,
     ],
+    calendarDateRange: {
+      startCalendarDate: {
+        year: 2025,
+        month: 3,
+        day: 18,
+      },
+      endCalendarDate: {
+        year: 2025,
+        month: 3,
+        day: 22,
+      },
+    },
   };
