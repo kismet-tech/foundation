@@ -1,6 +1,6 @@
 {
   "name": "@kismet_ai/foundation",
-  "version": "1.0.101",
+  "version": "1.0.103",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -12,7 +12,8 @@
   "scripts": {
     "build": "yarn rollup -c",
     "preparepublish": "rm -rf ./dist && tsc -b && yarn build && npm version patch --no-git-tag-version",
-    "release": "yarn run preparepublish && (npx npm publish --access public)"
+    "release": "yarn run preparepublish && (npx npm publish --access public)",
+    "local_publish": "rm -rf ./dist && tsc -b && yarn build && npm version patch --no-git-tag-version && yalc publish"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^28.0.1",
