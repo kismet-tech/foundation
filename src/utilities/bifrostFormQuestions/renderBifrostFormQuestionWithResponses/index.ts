@@ -97,7 +97,7 @@ export const renderBifrostFormQuestionWithResponses = ({
         }
 
         formattedResponse +=
-          `${NEW_LINE}Calendar Dates:` +
+          `${NEW_LINE}Calendar Dates: ` +
           bifrostFormQuestionWithResponse.responseData.responseValue
             .calendarDateRanges!.map((calendarDateRange) => {
               return renderCalendarDateRange({
