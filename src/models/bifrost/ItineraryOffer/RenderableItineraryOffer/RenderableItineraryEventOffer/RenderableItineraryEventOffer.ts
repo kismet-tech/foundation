@@ -14,19 +14,21 @@ export enum VenueOfferPricingType {
 
 export interface RenderableEventVenueOfferPricingInfo {
   pricingType: VenueOfferPricingType;
-  priceInCents: number;
+  offerPriceInCents: number;
+  offerListPriceInCents: number;
 }
 
 export interface RenderableEventVenueOffer {
   venueOfferId: string;
   venueName: string;
-  pricingInfo: RenderableEventVenueOfferPricingInfo;
+  pricingInfo: RenderableEventVenueOfferPricingInfo | null;
 }
 
 export interface RenderableItineraryEventOffer {
   eventOfferId: string;
   eventOfferName: string;
   eventOfferPriceInCents: number;
+  eventOfferListPriceInCents: number;
   isEventOfferPriceEnabled: boolean;
   imageUrl: string;
   startDateTime: string;
