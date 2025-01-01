@@ -78,6 +78,7 @@ export interface BifrostFormQuestionMultiStageReasonForTravelResponseValue {
   reasonForTravel?: ReservedBifrostReasonForTravelOptionValues;
   companyName?: string;
   websiteUrl?: string;
+  budgetInCents?: number;
 }
 
 export interface BifrostFormQuestionMultiStageReasonForTravelResponse {
