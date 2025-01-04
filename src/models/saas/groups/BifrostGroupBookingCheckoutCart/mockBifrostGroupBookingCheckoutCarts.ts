@@ -13,7 +13,16 @@ export const mockBifrostGroupBookingCheckoutCartEmpty: BifrostGroupBookingChecko
     hotelRooms: [],
   };
 
-export const mockBifrostGroupBookingCheckoutCartOne: BifrostGroupBookingCheckoutCart =
+export const mockBlockCartBifrostGroupBookingCheckoutCartOne: BifrostGroupBookingCheckoutCart =
+  {
+    hotelRooms: [
+      mockRenderableItineraryHotelRoomOfferOne,
+      mockRenderableItineraryHotelRoomOfferTwo,
+      mockRenderableItineraryHotelRoomOfferThree,
+    ],
+  };
+
+export const mockBifrostGroupBookingCheckoutCartTwo: BifrostGroupBookingCheckoutCart =
   {
     hotelRooms: [
       mockRenderableItineraryHotelRoomOfferOne,
